@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(38, 38, 38);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.form {
+    width: 40%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    opacity: 3;
+
+}
+.form input {
+    width: 100%;
+    height: 100%;
+    color: orangered;
+    padding-top: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #ffffff;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+  
+.content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.form input:focus {
+    outline: none;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    left: 0px;
+    color: #ffffff;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+.inp:focus{
+    border-color: aqua;
+}
+
+.passwordValid{
+    width: 380px;
+    height: 17px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.notValid{
+    display: none;
+    width: 95px;
+    height: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: red;
+}
+.weak{
+    display: none;
+    width: 95px;
+    height: 16px;
+    background-color: orangered;
+}
+
+.medium{
+    display: none;
+    width: 95px;
+    height: 16px;
+    background-color: yellow;
+}
+
+.reliable{
+    display: none;
+    width: 95px;
+    height: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: green;
+}
+
+.row{
+    width: 419px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    width: 419px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: black;
+    position: relative;
+    top: -50px;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

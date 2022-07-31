@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrap" id="wrap">
+
+    <div class="container">
+        <div class="form">
+            <input type="text" name="text" autocomplete="off" required / id="password">
+            <label for="text" class="label-name">
+              <span class="content-name">
+                Password
+              </span>
+            </label>
+          </div>
+        <!-- <div class="passwordValid">
+            <div class="notValid" id="notValid"></div>
+            <div class="weak" id="weak"></div>
+            <div class="medium" id="medium"></div>
+            <div class="reliable" id="reliable"></div>
+        </div> -->
+
+        <div class="text">
+            <p id="checkLen">Пароль повинен бути від 6 - 20 символів</p>
+            <p id="checkToLow">Пароль повинен містити маленькі букви</p>
+            <p id="checkToUp">Пароль повинен містити хочаб 1 велику букву</p>
+            <p id="checkNum">Пароль повинен містити хочаб 1 цифру</p>
+            <p id="checkSymbols">Пароль повинен містити хочаб 1 символ(!,@,#,$,%,ˆ,&,*)</p>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
